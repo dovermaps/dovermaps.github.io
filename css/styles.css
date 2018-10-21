@@ -1,0 +1,61 @@
+h4, p, a, select, label, button {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 34px;
+}
+
+p, a, select, label, button {
+    font-size: 16px;
+}
+
+/* for higher pixel density devices eg. retina display on iphone */
+@media (min-resolution: 192dpi) { 
+    h4 {
+        font-size: 68px;
+    }
+    
+    p, a, select, label, button {
+        font-size: 32px;
+    }
+}
+
+select, button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#warning {
+    width: 60%;
+    display: none;
+    color: #F44336;
+}
+
+.container {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#map {
+    height: 720px;
+    width: 1036px;
+    background-image: url('../resources/campus_map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>UWCSEA Dover Map</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <!-- Lies 8 + 9 are the ones that require internet - to get font and icons -->
+</head>
+
+<body>
+    <h4>UWCSEA Dover Map</h4>
+    <p>Select your current location and subject,</p>
+    <p>and let us show you the way!</p>
+    <p>Alternatively, you can download our map <a href="./resources/Dover Campus Map.pdf">here</a></p>
+    <br>
+    <form action="map.html" id="subject-location-form">
+        <label for="location"><strong>LOCATION</strong></label>
+        <br>
+        <br>
+        <select name="location" onchange="checkOptions()" id="location">
+            <option disabled selected>Select a location</option>
+            <option>Art Block</option>
+            <option>High School Block</option>
+            <option>Kurt Hahn House</option>
+            <option>Mathematics Block</option>
+            <option>Middle School Block</option>
+            <option>Science Block</option>
+            <option>Tent Plaza</option>
+        </select>
+        <br>
+        <br>
+        <label for="subject"><strong>SUBJECT</strong></label>
+        <br>
+        <br>
+        <select name="subject" onchange="checkOptions()" id="subject">
+            <option disabled selected>Select a subject</option>
+            <option>Arts</option>
+            <option>Computer Science</option>
+            <option>Design & Technology</option>
+            <option>Economics</option>
+            <option>English</option>
+            <option>Film</option>
+            <option>History</option>
+            <option>Languages</option>
+            <option>Mathematics</option>
+            <option>Philosophy</option>
+            <option>Science</option>
+            <option>Theatre</option>
+            <option>TOK</option>
+        </select>
+        <br>
+        <br>
+    </form>
+    <button onclick="submit()">LET'S GO</button>
+    <div id="warning">
+        <p>You are at the right location!</p>
+        <p>Do ask around for directions if you require further assistance.</p>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
